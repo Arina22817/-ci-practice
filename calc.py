@@ -8,3 +8,9 @@ if __name__ == "__main__":
 def average(numbers):
     # Ошибка: если список пуст, будет ZeroDivisionError
     return sum(numbers) / len(numbers)
+
+def average(numbers):
+    if not numbers:
+        return 0
+    return sum(numbers) / len(numbers)
+
